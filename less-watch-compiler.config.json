@@ -1,7 +1,7 @@
 {
   "watchFolder": "public/less",
   "outputFolder": "public/css",
-  "mainFile": "index.less",
+  "mainFile": "main.less",
   "includeHidden": false,
   "sourceMap": false,
   "runOnce": false,
