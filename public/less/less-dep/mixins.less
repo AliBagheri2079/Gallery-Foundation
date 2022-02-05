@@ -3,8 +3,13 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+
 .border-radius(@radius: 5px) {
     -webkit-border-radius: @radius;
     -moz-border-radius: @radius;
     border-radius: @radius;
+}
+
+.transition(@prop, @time: .2s) {
+    transition: @prop @time ease-in;
 }
