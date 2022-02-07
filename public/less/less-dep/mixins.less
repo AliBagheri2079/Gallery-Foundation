@@ -13,3 +13,16 @@
 .transition(@prop, @time: .2s) {
     transition: @prop @time ease-in;
 }
+
+.first-header() {
+    color: @primary;
+    font-weight: bold;
+    margin-right: 0;
+}
+
+.section-title-special() {
+    background: @primary;
+    color: @warning;
+    padding: 0.5rem;
+    clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+}
