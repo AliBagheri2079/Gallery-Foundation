@@ -272,7 +272,6 @@ h1 {
     }
 }
 
-
 // * inventory
 .inventory {
     background: @warning;
@@ -364,7 +363,6 @@ h1 {
 
     }
 }
-
 
 // * featured
 .featured {
@@ -544,7 +542,7 @@ h1 {
 
 // * services
 .services {
-    padding: 30px 5px;
+    padding-top: 30px;
 
     .services__header {
         margin-bottom: 40px;
@@ -631,6 +629,107 @@ h1 {
                 &:hover .main-service {
                     transform: translate(-10%);
                 }
+            }
+        }
+    }
+}
+
+// * footer
+.footer {
+    background-color: darken(@primary, 10%);
+    margin-top: 10px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .social-button {
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+        text-decoration: none;
+        width: 3.125rem;
+        height: 3.125rem;
+        border: 0.125rem solid transparent;
+        padding: 0;
+        text-align: center;
+        color: #fefefe;
+        font-size: 1.5625rem;
+        font-weight: normal;
+        line-height: 2em;
+        border-radius: 1.6875rem;
+        margin-right: 0.25rem;
+        margin-bottom: 0.25rem;
+        .transition(all, 0.5s, ease);
+
+        &:hover,
+        &:focus {
+            transform: rotate(360deg);
+        }
+
+        &.facebook {
+            background: #3b5998;
+
+            &:hover,
+            &:focus {
+                color: #3b5998;
+                background: #fefefe;
+                border-color: #3b5998;
+            }
+        }
+
+        &.instagram {
+            background: #125688;
+
+            &:hover,
+            &:focus {
+                color: #125688;
+                background: #fefefe;
+                border-color: #125688;
+            }
+        }
+
+        &.pinterest {
+            background: #cb2027;
+
+            &:hover,
+            &:focus {
+                color: #cb2027;
+                background: #fefefe;
+                border-color: #cb2027;
+            }
+        }
+
+        &.twitter {
+            background: #55acee;
+
+            &:hover,
+            &:focus {
+                color: #55acee;
+                background: #fefefe;
+                border-color: #55acee;
+            }
+        }
+
+        &.linkedin {
+            background: #007bb5;
+
+            &:hover,
+            &:focus {
+                color: #007bb5;
+                background: #fefefe;
+                border-color: #007bb5;
+            }
+        }
+
+        &.github {
+            background: #000000;
+
+            &:hover,
+            &:focus {
+                color: #000000;
+                background: #fefefe;
+                border-color: #000000;
             }
         }
     }
