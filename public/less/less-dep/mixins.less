@@ -10,14 +10,15 @@
     border-radius: @radius;
 }
 
-.transition(@prop, @time: .2s) {
-    transition: @prop @time ease-in;
+.transition(@property:all, @duration: .2s, @timing-function: ease-in) {
+    transition: @property @duration @timing-function;
 }
 
 .first-header() {
     color: @primary;
     font-weight: bold;
     margin-right: 0;
+    line-height: 1.7;
 }
 
 .section-title-special() {
